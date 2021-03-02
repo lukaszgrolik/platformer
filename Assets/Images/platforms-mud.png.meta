@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 867985a0909418b4c809ef2088ba33f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7752666783072482418
+    second: platforms-mud_0
+  - first:
+      213: 6342897847743750264
+    second: platforms-mud_1
+  - first:
+      213: 4248112720417131928
+    second: platforms-mud_2
+  - first:
+      213: -8520084762934605244
+    second: platforms-mud_3
+  - first:
+      213: -6635700861606143716
+    second: platforms-mud_4
+  - first:
+      213: 3099336760401218610
+    second: platforms-mud_5
+  - first:
+      213: -4603489853825655254
+    second: platforms-mud_6
+  - first:
+      213: -4382253701694241984
+    second: platforms-mud_7
+  - first:
+      213: -6249200605085130006
+    second: platforms-mud_8
+  - first:
+      213: 5515166110210094446
+    second: platforms-mud_9
+  - first:
+      213: 4986230058067764300
+    second: platforms-mud_10
+  - first:
+      213: 3577403090440554097
+    second: platforms-mud_11
+  - first:
+      213: -7602636293280368912
+    second: platforms-mud_12
+  - first:
+      213: -6587609578437050486
+    second: platforms-mud_13
+  - first:
+      213: 4967777882484199064
+    second: platforms-mud_14
+  - first:
+      213: -7275810055694019385
+    second: platforms-mud_15
+  - first:
+      213: 511645886167787252
+    second: platforms-mud_16
+  - first:
+      213: -1703209738211110609
+    second: platforms-mud_17
+  - first:
+      213: -4175215523473408181
+    second: platforms-mud_18
+  - first:
+      213: -405581657559614273
+    second: platforms-mud_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: platforms-mud_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 353
+        width: 525
+        height: 307
+      alignment: 9
+      pivot: {x: 0.49963635, y: 0.96876115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27471032d51079b60800000000000000
+      internalID: 7752666783072482418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_1
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 330
+        width: 164
+        height: 309
+      alignment: 9
+      pivot: {x: 0.5036342, y: 0.23915954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8702b558cff760850800000000000000
+      internalID: 6342897847743750264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_2
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 367
+        width: 110
+        height: 269
+      alignment: 9
+      pivot: {x: 0.5054177, y: 0.23041214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d0842030454fa30800000000000000
+      internalID: 4248112720417131928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 132
+        width: 324
+        height: 200
+      alignment: 9
+      pivot: {x: 0.49863386, y: 0.9649132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a8019ac0492c980800000000000000
+      internalID: -8520084762934605244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_4
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 265
+        width: 32
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19563c493149e3a0800000000000000
+      internalID: -6635700861606143716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_5
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 270
+        width: 28
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c4603dc5e030b20800000000000000
+      internalID: 3099336760401218610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_6
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 221
+        width: 60
+        height: 78
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2e5b974e5e1d10c0800000000000000
+      internalID: -4603489853825655254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_7
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 208
+        width: 51
+        height: 74
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043cfdaf97b1f23c0800000000000000
+      internalID: -4382253701694241984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_8
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 234
+        width: 52
+        height: 67
+      alignment: 9
+      pivot: {x: 0.4901628, y: 0.8321738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2aebbc8216649a0800000000000000
+      internalID: -6249200605085130006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_9
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 235
+        width: 49
+        height: 62
+      alignment: 9
+      pivot: {x: 0.5, y: 0.85803324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65785c4b5ec98c40800000000000000
+      internalID: 5515166110210094446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_10
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 238
+        width: 50
+        height: 61
+      alignment: 9
+      pivot: {x: 0.5102307, y: 0.8637135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c442183d1d5a23540800000000000000
+      internalID: 4986230058067764300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_11
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 212
+        width: 28
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1760818282d75a130800000000000000
+      internalID: 3577403090440554097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_12
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 219
+        width: 25
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6f78e52920e7690800000000000000
+      internalID: -7602636293280368912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_13
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 167
+        width: 47
+        height: 46
+      alignment: 9
+      pivot: {x: 0.51088375, y: 0.834}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f7c46bdfb1494a0800000000000000
+      internalID: -6587609578437050486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_14
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 163
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.48752502, y: 0.8184326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e4388e9a711f440800000000000000
+      internalID: 4967777882484199064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_15
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 141
+        width: 42
+        height: 73
+      alignment: 9
+      pivot: {x: 0.50000143, y: 0.88289696}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c49421ad41270b90800000000000000
+      internalID: -7275810055694019385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_16
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 10
+        width: 251
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5032095, y: 0.89599067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f622dff83bb91700800000000000000
+      internalID: 511645886167787252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_17
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 21
+        width: 332
+        height: 80
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f21d0ff54cbfc58e0800000000000000
+      internalID: -1703209738211110609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_18
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 69
+        width: 84
+        height: 53
+      alignment: 9
+      pivot: {x: 0.514692, y: 0.7684267}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fbba64a97ae06c0800000000000000
+      internalID: -4175215523473408181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platforms-mud_19
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 74
+        width: 74
+        height: 47
+      alignment: 9
+      pivot: {x: 0.49444002, y: 0.87527615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcbebd91a51f5af0800000000000000
+      internalID: -405581657559614273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 345c25c8f5ff9d544a520d10cade9fdd
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
