@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 7240cc9509e7c654ebd4697b355ef5e0
+guid: b9fd7c8cc341e08418f8ffde180d3ad0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5070907808738726621
-    second: platforms-bright-forest_0
+      213: -5981993798188634692
+    second: landscape_0
   - first:
-      213: -1823602506917685679
-    second: platforms-bright-forest_1
-  - first:
-      213: 2216992467962487199
-    second: platforms-bright-forest_2
-  - first:
-      213: -4098293958478876841
-    second: platforms-bright-forest_3
+      213: -4774385719717708883
+    second: landscape_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,34 +133,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: platforms-bright-forest_0
+      name: landscape_0
       rect:
         serializedVersion: 2
-        x: 22
-        y: 1193
-        width: 1932
-        height: 274
-      alignment: 9
-      pivot: {x: 0.49999997, y: 0.916229}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32daf5bf63480a9b0800000000000000
-      internalID: -5070907808738726621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: platforms-bright-forest_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 1036
-        width: 388
-        height: 108
+        x: 84
+        y: 0
+        width: 2392
+        height: 1474
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +147,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f91ee9a47e654ce10800000000000000
-      internalID: 2216992467962487199
+      spriteID: cbd6062a550bbfca0800000000000000
+      internalID: -5981993798188634692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platforms-bright-forest_3
+      name: landscape_1
       rect:
         serializedVersion: 2
-        x: 24
-        y: 9
-        width: 928
-        height: 989
+        x: 2539
+        y: 0
+        width: 1257
+        height: 812
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +168,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75facb3cb5fef17c0800000000000000
-      internalID: -4098293958478876841
+      spriteID: dab3783db79fdbdb0800000000000000
+      internalID: -4774385719717708883
       vertices: []
       indices: 
       edges: []
@@ -204,7 +177,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8114bfec1d10bb649b905acf66a3abd2
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
