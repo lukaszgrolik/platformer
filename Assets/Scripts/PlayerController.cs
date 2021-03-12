@@ -8,16 +8,14 @@ using UnityEditor;
 
 public class PlayerController : MonoBehaviour
 {
+    private GameplayManager gameplayManager;
+
     [SerializeField] private Camera cam;
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private Transform bulletSpawnPoint;
-    [SerializeField] private float bulletSpawnPointRadius;
+
     [SerializeField] private float baseMovementSpeed = 5;
     [SerializeField] private float baseJumpSpeed = 5;
 
-    private Rigidbody2D rb;
-    private SpriteRenderer spriteRend;
-    private float movementX;
+    // private float movementX;
 
     private bool leftPressed = false;
     private bool rightPressed = false;
@@ -31,61 +29,59 @@ public class PlayerController : MonoBehaviour
 
     private int speedMode = 0;
 
-    // private Vector3 resBulletSpawnPointCenter;
-    private float bulletSpawnPointRadiusScaled;
-
     private Vector3 mouseWorldPos;
 
     private float mouseAngle;
     private bool flipped = false;
 
-    void Awake()
-    {
-        rb = GetComponentInChildren<Rigidbody2D>();
-        spriteRend = GetComponentInChildren<SpriteRenderer>();
-    }
+    private const KeyCode JUMPING_KEY = KeyCode.W;
+    private bool alreadyJumped = false;
 
-    void Start()
+    public void Setup(GameplayManager gameplayManager)
     {
+        this.gameplayManager = gameplayManager;
+
         movSpeed = baseMovementSpeed * .5f;
         jumpSpeed = baseJumpSpeed * .75f;
-
-        // resBulletSpawnPointCenter = transform.localPosition + (bulletSpawnPointCenter * transform.localScale.y);
-        bulletSpawnPointRadiusScaled = bulletSpawnPointRadius * transform.localScale.y;
     }
 
-    // Update is called once per frame
     void Update() {
+        var agentController = gameplayManager.PlayableAgent;
+        var rb = agentController.RigidBody;
+
         // movementX = Input.GetAxis("Horizontal");
 
         mouseWorldPos = cam.ScreenToWorldPoint((Vector2)Input.mousePosition);
-        var dir = (mouseWorldPos - bulletSpawnPoint.position).normalized;
+        var dir = (mouseWorldPos - agentController.AgentModel.ProjectileSpawnPointCenter.position).normalized;
         mouseAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        bulletSpawnPoint.eulerAngles = new Vector3(0, 0, mouseAngle);
+
+        // bulletSpawnPoint.eulerAngles = new Vector3(0, 0, mouseAngle);
+        agentController.ProjectileSpawner.LookAt(mouseWorldPos);
 
         if (mouseAngle > -90 && mouseAngle < 90 && flipped) {
             // show right side
-            spriteRend.flipX = !spriteRend.flipX;
+            agentController.AgentModel.Flip();
+            // spriteRend.flipX = !spriteRend.flipX;
             flipped = false;
         }
         else if ((mouseAngle >= 90 || mouseAngle <= -90) && !flipped) {
             // show left side
-            spriteRend.flipX = !spriteRend.flipX;
+            agentController.AgentModel.Flip();
+            // spriteRend.flipX = !spriteRend.flipX;
             flipped = true;
         }
 
         if (Input.GetMouseButtonDown(0)) {
-            // var bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            var pos = bulletSpawnPoint.position + bulletSpawnPoint.right * bulletSpawnPointRadiusScaled;
-            var bullet = Instantiate(bulletPrefab, pos, bulletSpawnPoint.rotation);
-            var rb = bullet.GetComponent<Rigidbody2D>();
-            rb.velocity = bullet.transform.right * 35;
-            // transform.Translate(0, 0, speed * Time.deltaTime);
+            agentController.ProjectileSpawner.Spawn();
         }
 
         leftPressed = Input.GetKey(KeyCode.A);
         rightPressed = Input.GetKey(KeyCode.D);
-        topPressed = Input.GetKey(KeyCode.W);
+        topPressed = Input.GetKey(JUMPING_KEY);
+
+        if (Input.GetKeyUp(JUMPING_KEY)) {
+            alreadyJumped = false;
+        }
 
         if (rb.velocity.Equals(Vector3.zero) || (!leftPressed && !rightPressed)) {
             speedMode = 0;
@@ -117,6 +113,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        var agentController = gameplayManager.PlayableAgent;
+        var rb = agentController.RigidBody;
+
         // rb.MovePosition(transform.position + new Vector3(movementX, 0, 0) * speed * Time.deltaTime);
 
         // if (Input.GetKey(KeyCode.A)) {
@@ -133,10 +132,12 @@ public class PlayerController : MonoBehaviour
         // if (Input.GetKey(KeyCode.W)) {
         if (topPressed) {
             // Debug.Log(rb.velocity);
-            if (rb.velocity.y == 0) {
+            if (rb.velocity.y == 0 && !alreadyJumped) {
                 // var resJumpSpeed = Mathf.Abs(rb.velocity.x) > ;
 
                 rb.velocity = new Vector3(rb.velocity.x, jumpSpeed);
+
+                alreadyJumped = true;
             }
 
             // rb.velocity = new Vector3(0, 5, 0);
@@ -145,12 +146,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-#if UNITY_EDITOR
-    void OnDrawGizmos()
-    {
-        // Handles.Label(transform.position, $"{mouseWorldPos.ToString()} | {Input.mousePosition}");
-        Handles.Label(transform.position, $"{mouseAngle.ToString()}");
-        Gizmos.DrawWireSphere(bulletSpawnPoint.position, bulletSpawnPointRadiusScaled);
-    }
-#endif
+// #if UNITY_EDITOR
+//     void OnDrawGizmos()
+//     {
+//         // Handles.Label(transform.position, $"{mouseWorldPos.ToString()} | {Input.mousePosition}");
+//         Handles.Label(transform.position, $"{mouseAngle.ToString()}");
+//         Gizmos.DrawWireSphere(bulletSpawnPoint.position, bulletSpawnPointRadiusScaled);
+//     }
+// #endif
 }
