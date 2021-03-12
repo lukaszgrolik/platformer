@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 209651141119902589, guid: 053776856c854c1448ca119725b503dc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1.19, y: 1.49}
@@ -200,9 +200,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 825424078189803848}
-  - component: {fileID: 3584711202065092232}
   - component: {fileID: 6570049969766677610}
   - component: {fileID: 9099635788191665596}
+  - component: {fileID: 3584711202065092232}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -232,20 +232,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3584711202065092232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753198308060364076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47773e9f26e7f104294640c2118c05dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1067737281093998719, guid: 324834185463539449a868f48784c830, type: 3}
-  bulletSpawnPoint: {fileID: 6869273279591862344}
 --- !u!50 &6570049969766677610
 Rigidbody2D:
   serializedVersion: 4
@@ -293,6 +279,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &3584711202065092232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753198308060364076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47773e9f26e7f104294640c2118c05dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  bulletPrefab: {fileID: 1067737281093998719, guid: 324834185463539449a868f48784c830, type: 3}
+  bulletSpawnPoint: {fileID: 6869273279591862344}
+  bulletSpawnPointRadius: 0.5
+  baseMovementSpeed: 5
+  baseJumpSpeed: 12
 --- !u!1 &1788586624349579313
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7376340863068081277}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.602, y: 0.366, z: 0}
+  m_LocalPosition: {x: 0.017, y: 0.366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 825424078189803848}

@@ -2216,8 +2216,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 26.991467
-  orthographic: 0
-  orthographic size: 10
+  orthographic: 1
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3017,6 +3017,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 825424078189803848, guid: 9ee4b461ab2adda41bae04dbee9a0df4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584711202065092232, guid: 9ee4b461ab2adda41bae04dbee9a0df4, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 818083007}
+    - target: {fileID: 3584711202065092232, guid: 9ee4b461ab2adda41bae04dbee9a0df4, type: 3}
+      propertyPath: jumpSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4440845724453929564, guid: 9ee4b461ab2adda41bae04dbee9a0df4, type: 3}
+      propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
