@@ -10,13 +10,11 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float smoothSpeed = 10f;
 
 
-    // Start is called before the first frame update
-    void Start()
+    public void Setup(Transform target)
     {
-
+        this.target = target;
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
         var tPos = target.position;

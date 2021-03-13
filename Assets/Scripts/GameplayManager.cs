@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameplayManager : MonoBehaviour
 {
-    private PlayerController playerController;
+    // private PlayerController playerController;
 
     [SerializeField] private AgentController playableAgent;
     public AgentController PlayableAgent { get => playableAgent; }
@@ -14,9 +14,12 @@ public class GameplayManager : MonoBehaviour
 
     void Start()
     {
-        playerController = GetComponent<PlayerController>();
+        var playerController = GetComponent<PlayerController>();
         playerController.Setup(this);
         // var playerAgentController = playerController.AgentController;
+
+        var cameraFollow = GetComponent<CameraFollow>();
+        cameraFollow.Setup(playableAgent.transform);
 
         var agentControllers = FindObjectsOfType<AgentController>();
         for (int i = 0; i < agentControllers.Length; i++)

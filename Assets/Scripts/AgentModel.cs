@@ -15,8 +15,12 @@ public class AgentModel : MonoBehaviour
 
     private SpriteRenderer spriteRend;
 
+    private Animator animator;
+    public Animator Animator { get => animator; }
+
     public void Setup() {
         spriteRend = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren<Animator>();
 
         projectileSpawnPointRadiusScaled = projectileSpawnPointRadius * transform.localScale.y;
     }

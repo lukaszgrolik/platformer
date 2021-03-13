@@ -37,6 +37,10 @@ public class PlayerController : MonoBehaviour
     private const KeyCode JUMPING_KEY = KeyCode.W;
     private bool alreadyJumped = false;
 
+    private bool isMoving = false;
+    private bool isMidAir = false;
+    private bool isShooting = false;
+
     public void Setup(GameplayManager gameplayManager)
     {
         this.gameplayManager = gameplayManager;
@@ -73,15 +77,35 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) {
             agentController.ProjectileSpawner.Spawn();
+
+            StartCoroutine(HandleShootingState());
         }
 
         leftPressed = Input.GetKey(KeyCode.A);
         rightPressed = Input.GetKey(KeyCode.D);
         topPressed = Input.GetKey(JUMPING_KEY);
 
+        if (isMidAir) {
+            agentController.AgentModel.Animator.Play("Character_Jumping");
+        }
+        else if (isShooting) {
+            agentController.AgentModel.Animator.Play("Character_Casting");
+        }
+        else if (isMoving)
+        {
+            agentController.AgentModel.Animator.Play("Character_Walking");
+        }
+        else
+        {
+            agentController.AgentModel.Animator.Play("Character_Idle");
+        }
+
         if (Input.GetKeyUp(JUMPING_KEY)) {
             alreadyJumped = false;
         }
+
+        isMoving = rb.velocity.x.Equals(0) == false;
+        isMidAir = rb.velocity.y.Equals(0) == false;
 
         if (rb.velocity.Equals(Vector3.zero) || (!leftPressed && !rightPressed)) {
             speedMode = 0;
@@ -118,6 +142,8 @@ public class PlayerController : MonoBehaviour
 
         // rb.MovePosition(transform.position + new Vector3(movementX, 0, 0) * speed * Time.deltaTime);
 
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+
         // if (Input.GetKey(KeyCode.A)) {
         if (leftPressed) {
             // Debug.Log(rb.velocity);
@@ -127,6 +153,9 @@ public class PlayerController : MonoBehaviour
         else if (rightPressed) {
             // Debug.Log(rb.velocity);
             rb.velocity = new Vector3(movSpeed, rb.velocity.y);
+        }
+        else {
+            rb.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
         }
 
         // if (Input.GetKey(KeyCode.W)) {
@@ -144,6 +173,14 @@ public class PlayerController : MonoBehaviour
             // rb.MovePosition(transform.position + new Vector3(0, 10, 0) * speed * Time.deltaTime);
             // rb.AddForce(new Vector3(0, 2000, 0));
         }
+    }
+
+    IEnumerator HandleShootingState() {
+        isShooting = true;
+
+        yield return new WaitForSeconds(.25f);
+
+        isShooting = false;
     }
 
 // #if UNITY_EDITOR
